@@ -1,0 +1,51 @@
+  
+  <div class="grid main-grid-6">
+    <h1 class="title text-center"><span>
+        {{section.settings.title}}
+      </span></h1>
+
+
+    <div class="grid__item medium-up--one-third text-section-6 small--one-half no-rigt-space">
+       {{section.settings.detail}}
+    </div>
+
+    
+    
+    <div class="grid__item medium-up--two-fifths small--one-half no-rigt-space">
+      <div class="image-bg-col">
+       <img src="{{section.settings.image | img_url: ""}}" class="image-rotate">
+      </div>
+    </div>
+    
+  </div>
+
+{% schema %}
+  {
+    "name": "Section 5",
+    "settings": [
+
+{
+            "type": "text",
+            "id": "title",
+            "label": "title"
+          },
+{
+            "type": "richtext",
+            "id": "detail",
+            "label": "Detail"
+          },
+{
+            "type": "image_picker",
+            "id": "image",
+            "label": "image"
+          }
+
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

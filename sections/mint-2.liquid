@@ -1,0 +1,40 @@
+ 
+        <div class="vegan left-by-side three-quarters relative">
+          <img src="{{section.settings.image | img_url: ""}}" class="img">
+          <div class="overlay widescreen--one-third medium-up--one-half small--one-half">
+              <h1>{{section.settings.title}}</h1>
+              {{section.settings.detail}}
+          </div>
+        </div>
+
+
+{% schema %}
+  {
+    "name": "Mint section 2",
+    "settings": [
+
+		{
+            "type": "text",
+            "id": "title",
+            "label": "title"
+          },
+		{
+            "type": "richtext",
+            "id": "detail",
+            "label": "Detail"
+          },
+		{
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,38 @@
+
+   <div class="alone-para">
+          <div class="inner">
+             {{section.settings.detail}}
+			</div>
+        </div>
+
+
+{% schema %}
+  {
+    "name": "Mint section 1",
+    "settings": [
+
+		{
+            "type": "text",
+            "id": "title",
+            "label": "title"
+          },
+		{
+            "type": "richtext",
+            "id": "detail",
+            "label": "Detail"
+          },
+		{
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

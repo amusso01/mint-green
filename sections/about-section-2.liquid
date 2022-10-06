@@ -1,0 +1,39 @@
+  <div class="grid main-grid-2">
+    
+    <div class="grid__item medium-up--two-fifths">
+      <h1 class="headin-2">{{section.settings.title}}</h1>
+    </div>
+    
+    <div class="grid__item text-sectionabt">
+      <div class="text-apra">
+        {{section.settings.detail}}
+      </div>
+    </div>
+    
+  </div>
+
+{% schema %}
+  {
+    "name": "Section 2",
+    "settings": [
+
+{
+            "type": "text",
+            "id": "title",
+            "label": "title"
+          },
+{
+            "type": "richtext",
+            "id": "detail",
+            "label": "Detail"
+          }
+
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

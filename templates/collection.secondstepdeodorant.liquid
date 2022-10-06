@@ -1,0 +1,86 @@
+<div class="page-width page-content" style="padding-bottom: 0;">
+  <div class="grid">
+    <div class="grid__item medium-up--three-quarters medium-up--push-one-eighth">
+
+      <div class="addedbanner">
+        <p>FREE Natural Deodorant was added to your basket! Discount applied at checkout</p>
+        <a class="closeaddbanner" href="javascript:void(0)">&#x2715</a>
+      </div>
+
+      <div class="moreproducts">
+        <h1>You may also want</h1>
+        <p class="subtext">Why not try some of our best sellers? Select them below or continue with your awesome free deodorant</p>
+
+        <form id="addmoreproducts">
+            {% for product in collections.second-step-deodorant.products limit: 4 %} 
+                   <div class="column c_25">
+                     {% for variant in product.variants %}
+                     {% assign varid = variant.id %}
+                     {% endfor %}
+                     <label class="boxproductoption"><input type="checkbox" class="inputselected" name="idprod" value="{{varid}}" />
+                        <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="">
+                       <h3>{{ product.title }}</h3>
+                       <p>{{ product.price | money }}</p>
+                     </label>
+                   </div>
+             {% endfor %}
+            <div class="clear"></div>
+          <center><a id="addproducts" class="purplebtn" href="javascript:void(0)">ADD PRODUCTS TO CART</a></center>
+          <br>
+          <center><a class="linkpurple" href="https://mintgreen.store/discount/freedeodorant?redirect=/cart/">NO THANKS, I’LL STICK WITH MY FREE DEODORANT</a></center>
+        </form>
+
+      </div>
+
+    </div>
+  </div> 
+</div>
+
+<div class="newslandding">
+	{% section 'newsletter' %}
+</div>
+
+<script>
+  	var arrayids = [];
+  
+	$( "#addproducts" ).click(function() {
+      
+      $('#addmoreproducts input:checkbox[name=idprod]:checked').each(function() 
+      {
+		 arrayids.push( $(this).val());
+      });
+      
+      var oneid = '';
+      var twoid = 0;
+      var threeid = 0;
+      var fourid = 0;
+      
+      $.each( arrayids, function( index, value ){
+        if( index != 0 ){
+        	oneid = oneid+"&id[]="+value+"&quantity=1";
+        }else{
+          oneid = oneid+"id[]="+value+"&quantity=1";
+        }
+      });
+      
+      var link = "https://mintgreen.store/cart/add?"+oneid;
+      window.location.replace(link+"?discount=freedeodorant");
+      
+    });
+  
+  $( ".inputselected" ).click(function() {
+    if( $(this).parent().hasClass( "checked" ) ){
+    	$(this).parent().removeClass('checked');
+    }else{
+    	$(this).parent().addClass('checked');
+    }
+  });
+  
+  $( ".closeaddbanner" ).click(function() {
+    $(".addedbanner").addClass('off');
+  });
+  
+</script>
+
+
+

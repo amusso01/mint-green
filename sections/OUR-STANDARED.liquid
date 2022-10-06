@@ -1,0 +1,85 @@
+<div class="page-width-full footer-promotions mints-promotions main-our-contact custom-our-stander2" style="background-image: url({{section.settings.bg_image | img_url: ""}});    background-size: cover;background-position: center;">
+ <div class="custom-head">
+   <a href="{{section.settings.link}}">{{section.settings.title1}}</a>
+   <a href="{{section.settings.link}}" class="findmore-mints">FIND OUT MORE <img src="{{'sort-right.png' | asset_img_url: ""}}"></a>
+  </div>
+  <div class="grid grid--flush-bottom custom-our-stander">
+    
+   {% for block in section.blocks %}
+    
+    <div class="grid__item one-sixth aos-init aos-animate">
+      <div class="bd-green" >
+        <div class="inner-contact">
+          <a href="{{block.settings.link5}}">
+          <img  class="img" src="{{ block.settings.image | img_url: "" }}" />
+          
+          <div class="overlay-mint-btn">
+             <span class="btn-link">{{block.settings.title}}</span>
+          </div>
+            </a>
+        </div>
+      </div>
+    </div>
+
+   {% endfor %}
+   
+  </div>
+   
+</div>
+
+
+
+
+{% schema %}
+  {
+    "name": "Our Standard Mint",
+    "class": "index-section",
+    "settings": [
+		{
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "background image"
+      },
+ 		{
+            "type": "url",
+            "id": "link",
+            "label": "LINK"
+          },
+ 		{
+            "type": "text",
+            "id": "title1",
+            "label": "Heading 1",
+            "default": "SHOP BY<br/>STANDARDS"
+          }
+
+    ],
+    "presets": [{
+      "name": "Our Standerd Mint",
+      "category": "Custom"
+    }],
+    "blocks" :  [
+      {
+        "type": "promotion",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+{
+            "type": "url",
+            "id": "link5",
+            "label": "LINK"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Site-wide promotion"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

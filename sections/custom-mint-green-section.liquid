@@ -1,0 +1,73 @@
+{%- assign blog = blogs[section.settings.blog] -%}
+
+<div class="page-width mint-green-section">
+  
+  <div class="blog-title">
+  	<div class="custom-head">{{section.settings.title}}</div>
+  </div>
+
+  <div class="grid mint-blog-slider">
+
+    {% for article in blog.articles limit: 2 %}
+    
+        <div class=" grid__item medium-up--one-half main-contact-2 ">
+      <div class="inner-blog">
+        <div class="img-blog">
+          <img  class="img" src="{{ article.image | img_url: "" }}" />
+        </div>
+
+        <div class="detail-blog">
+          <h3>{{article.title | truncate: 50}}</h3>
+          <a href="{{article.url}}">Learn More <img src="{{'arrrowgreen.png' | asset_img_url: "25x"}}"></a>
+        </div>
+
+      </div>
+
+    </div>
+    
+    {% endfor %}
+
+    
+    
+    
+  </div>
+  
+  <div class="blog-btn">
+    <a href="{{blog.url}}">BLOG</a>
+  </div>
+  
+</div>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "New Blog posts",
+    "class": "index-section mint-blog-posts",
+    "settings": [  
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Blog posts"
+      },
+      {
+        "id": "blog",
+        "type": "blog",
+        "label": "Blog"
+      }
+ 
+    ],
+    "presets": [
+      {
+        "name": "Mint Green Blog",
+        "category": "Blog",
+        "settings": {
+          "blog": "News"
+        }
+      }
+    ]
+  }
+{% endschema %}

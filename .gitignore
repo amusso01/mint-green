@@ -1,0 +1,7 @@
+config.yml
+.vscode
+.DS_Store
+.DS_Store?
+.cache
+foundry.scss
+node_modules

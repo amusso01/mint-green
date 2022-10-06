@@ -1,0 +1,168 @@
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+
+{%- unless thumbnail_position -%}
+  {%- assign thumbnail_position = 'beside' -%}
+{%- endunless -%}
+
+{%- unless description_style -%}
+  {%- assign description_style = 'full' -%}
+{%- endunless -%}
+
+{%- assign product_zoom_size = '1800x1800' -%}
+{%- assign product_image_size = '620x' -%}
+
+{% case image_container_width %}
+  {% when 'small' %}
+    {%- assign product_image_width = 'medium-up--two-fifths' -%}
+    {%- assign product_description_width = 'medium-up--three-fifths' -%}
+    {%- assign product_image_size = '480x' -%}
+  {% when 'medium' %}
+    {%- assign product_image_width = 'medium-up--one-half' -%}
+    {%- assign product_description_width = 'medium-up--one-half' -%}
+    {%- assign product_image_size = '620x' -%}
+  {% when 'large' %}
+    {%- assign product_image_width = 'medium-up--three-fifths' -%}
+    {%- assign product_description_width = 'medium-up--two-fifths' -%}
+    {%- assign product_image_size = '740x' -%}
+{% endcase %}
+
+{%- assign product_img_structure = product.featured_media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+<div class="maincomponents">
+	<div class="page-width">
+      
+      {% assign cont = 0 %}
+      {% for value in product.metafields.ComponentImage.compimage %}
+      	<div class="column c_20">
+          <div class="mainimgcomponent">
+              <img src="{{value}}">
+              <h3>{{product.metafields.ComponentTitle.comptitle[cont]}}</h3>
+              {% assign cont = cont | plus:1 %}
+          </div> 
+        </div>
+      {% endfor %}
+      <div class="clear"></div>
+    </div>
+</div>
+
+<div id="ProductSection-{{ section_id }}"
+  class="product-section"
+  data-section-id="{{ section_id }}"
+  data-section-type="product-template"
+  data-product-handle="{{ product.handle }}"
+  data-product-url="{{ product.url | within: collection }}"
+  data-aspect-ratio="{{ 100 | divided_by: product.featured_media.aspect_ratio }}"
+  data-img-url="{{ product_img_structure }}"
+  {% if settings.product_zoom_enable %}
+    data-image-zoom="true"
+  {% endif %}
+  {% if settings.inventory_enable %}
+    data-inventory="true"
+  {% endif %}
+  {% if settings.inventory_transfers_enable %}
+    data-incoming-inventory="true"
+  {% endif %}
+  {% unless isModal %}
+    data-enable-history-state="true"
+  {% endunless %}>
+
+  {% render 'product-template-variables', product: product, current_variant: current_variant %}
+
+  <div class="page-content page-content--product">
+    <div class="page-width">
+
+      <div class="grid{% unless image_position == 'left' %} grid--product-images-right{% endunless %}">
+        {%- if image_position == 'left' -%}
+          <div class="grid__item {{ product_image_width }}">
+            {% if product.metafields.my_fields.gif_image != blank %}
+            	<img class="giftimage" src="{{product.metafields.my_fields.gif_image | file_url }}">
+            {% endif %}
+            
+            {% if product.metafields.my_fields.description_gift != blank %}
+                <div class="undergif">
+                	{{product.metafields.IngredientsDes.ingredientdes}}
+                </div>  
+            {% endif %}
+            
+          </div>
+        {%- endif -%}
+
+        <div class="grid__item {{ product_description_width }}">
+
+          <div class="product-single__meta">
+            
+
+            {%- unless description_style == 'full' -%}
+              <div class="product-single__description rte">
+                <a class="rating" href="https://mintgreen.store/pages/ratings"><div id="pretty-product-pages"></div></a>
+                {% render 'product-description-slider', product: product %}
+              </div>
+
+
+              {% render 'product-additional-content', product: product, section_id: section_id %}
+            {%- endunless -%}
+            
+            
+            <div class="boxesingredients">
+              <div class="bxingr">
+                {% assign cont2 = 0 %}
+                {% for imgp in product.metafields.IngredientImage.ingredientimage %}
+                    <div class="boxingredient">
+                        <img src="{{imgp}}">
+                        <div class="contingredient">
+                            <h4>{{product.metafields.IngredientTitle.ingredienttitle[cont2]}}</h4>
+                            <p>{{product.metafields.IngredientDescript.ingredientdescrip[cont2]}}</p>
+                            {% assign cont2 = cont2 | plus:1 %}
+                        </div>  
+                    </div>	
+                {% endfor %}
+              </div>
+              
+            </div>
+            
+            {%- if social -%}
+            <center> {% render 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product %} </center>
+            {%- endif -%}
+            
+          </div>
+        </div>
+
+        {%- unless image_position == 'left' -%}
+          <div class="grid__item {{ product_image_width }}">
+            {% render 'product-images',
+              section_id: section_id,
+              product: product,
+              isModal: isModal,
+              image_position: image_position,
+              product_zoom_size: product_zoom_size,
+              product_image_size: product_image_size,
+              thumbnail_arrows: thumbnail_arrows,
+              thumbnail_position: thumbnail_position,
+              video_looping: video_looping,
+              video_style: video_style
+            %}
+          </div>
+        {%- endunless -%}
+      </div>
+
+      {%- if description_style == 'full' -%}
+        <div class="product-single__description-full rte">
+          
+          {% render 'product-description-slider', product: product %}
+         
+        </div>
+
+        {% render 'product-additional-content', product: product, section_id: section_id %}
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+<script>
+	$( ".easyslider-item" ).click(function() {
+      setTimeout(function() {
+         $('html, body').animate({scrollTop: '-=150px'}, 200);
+     }, 500);
+      
+    });
+</script>

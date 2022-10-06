@@ -1,0 +1,392 @@
+
+
+<div class="bannerlandingpage">
+  <div class="table-box" style="background-image: url('https://cdn.shopify.com/s/files/1/0445/0828/3039/files/hero-banner.png?v=1649344601');">
+    <div class="table-cell">
+      <div class="page-width page-content">
+      <div class="grid__item medium-up--three-quarters medium-up--push-one-eighth">
+        <div class="column c_50">&nbsp;</div>
+        <div class="column c_50">
+          <h1>CLAIM YOUR<br><span class="greenlabel">FREE NATURAL</span><br><span class="greenlabel label2responsive">DEODORANT</span> NOW</h1>
+          <p style="margin-bottom: 41px; font-size: 16px;">(Worth £10) - <span style="font-size: 16px;" class="textbannerbold">All you need to do is cover delivery from £4.99</span></p>
+          
+          
+          {% assign btnactive = "false" %}
+          {% for item in cart.items %}
+              {% if item.product.id == 7673965248738  %}
+                 {% assign btnactive = "true" %}
+              {% endif %} 
+          {% endfor %}
+          
+          {% if btnactive == "true"  %}
+          	<a class="disablebtn" href="javascript:void(0);">CLAIM NOW</a>
+          {% elsif btnactive == "false" %}
+          	<a class="purplebtn" href="javascript:void(0);">CLAIM NOW</a>
+          {% endif %} 
+          
+          
+        </div>
+        <div class="clear"></div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-width page-content">
+
+	<div class="grid">
+    <div class="grid__item medium-up--three-quarters medium-up--push-one-eighth">
+      
+      <div id="startblock" class="aboutproduct">
+        <div class="column c_40">
+          <img src="{{product.metafields.MainImage.mainimage}}" />
+        </div>
+        <div class="column c_10">&nbsp;</div>
+        <div class="column c_50">
+          	<h2>Mint Green Natural Deodorant</h2>
+          <div class="onelineabout">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="17.117" viewBox="0 0 110 17.117">
+              <defs>
+                <clipPath id="clip-path">
+                  <rect id="Rectangle_10" data-name="Rectangle 10" width="18" height="17.117" fill="#02fc54"/>
+                </clipPath>
+              </defs>
+              <g id="Group_12" data-name="Group 12" transform="translate(-690 -817.348)">
+                <g id="Group_7" data-name="Group 7" transform="translate(690 817.348)">
+                  <g id="Group_6" data-name="Group 6" clip-path="url(#clip-path)">
+                    <path id="Path_1" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                  </g>
+                </g>
+                <g id="Group_8" data-name="Group 8" transform="translate(713 817.348)">
+                  <g id="Group_6-2" data-name="Group 6" clip-path="url(#clip-path)">
+                    <path id="Path_1-2" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                  </g>
+                </g>
+                <g id="Group_9" data-name="Group 9" transform="translate(736 817.348)">
+                  <g id="Group_6-3" data-name="Group 6" clip-path="url(#clip-path)">
+                    <path id="Path_1-3" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                  </g>
+                </g>
+                <g id="Group_10" data-name="Group 10" transform="translate(759 817.348)">
+                  <g id="Group_6-4" data-name="Group 6" clip-path="url(#clip-path)">
+                    <path id="Path_1-4" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                  </g>
+                </g>
+                <g id="Group_11" data-name="Group 11" transform="translate(782 817.348)">
+                  <g id="Group_6-5" data-name="Group 6" clip-path="url(#clip-path)">
+                    <path id="Path_1-5" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <p>76 reviews</p>
+          </div>
+          	
+          	{{product.metafields.DescriptionProduct.descriptionproduct}}
+        </div>
+        
+        <div class="clear"></div>
+
+      </div><!--End about product-->
+      
+      <div class="ingredientproduct">
+        <div class="column c_40">
+        	{{product.metafields.IngredientproductDes.IngredientProductDes}}
+          
+            {% assign btnactive = "false" %}
+            {% for item in cart.items %}
+                {% if item.product.id == 7673965248738  %}
+                   {% assign btnactive = "true" %}
+                {% endif %} 
+            {% endfor %}
+
+            {% if btnactive == "true"  %}
+              <a class="disablebtn" href="javascript:void(0);">CLAIM NOW</a>
+            {% elsif btnactive == "false" %}
+              <a class="purplebtn" href="javascript:void(0);">CLAIM NOW</a>
+            {% endif %} 
+            
+        </div>
+        <div class="column c_10">&nbsp;</div>
+        <div class="column c_50 colsright">
+        	<img src="{{product.metafields.VideoProduct.VideoProduct}}" />
+        </div>
+        <div class="clear"></div>
+      </div>
+      
+
+    </div>
+  </div>
+
+</div>
+
+<div class="maincomponents landingpage" style="padding: 90px 0 80px;">
+	<div class="page-width">
+      {% assign cont = 0 %}
+      {% for value in product.metafields.ImageComponent.ImageComponent %}
+      	<div class="column c_20">
+          <div class="mainimgcomponent">
+              <img src="{{value}}">
+              <h3>{{product.metafields.TitleComponent.TitleComponent[cont]}}</h3>
+              {% assign cont = cont | plus:1 %}
+          </div> 
+        </div>
+      {% endfor %}
+      <div class="clear"></div>
+    </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<div class="page-width page-content">
+  <div class="grid">
+      <div class="grid__item medium-up--three-quarters medium-up--push-one-eighth">
+
+        <section class="slidercommets">
+          <div class="your-class">
+            <div>
+              <div class="internalcomment">
+                <div class="qualy">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="17.117" viewBox="0 0 110 17.117">
+                      <defs>
+                        <clipPath id="clip-path">
+                          <rect id="Rectangle_10" data-name="Rectangle 10" width="18" height="17.117" fill="#02fc54"/>
+                        </clipPath>
+                      </defs>
+                      <g id="Group_12" data-name="Group 12" transform="translate(-690 -817.348)">
+                        <g id="Group_7" data-name="Group 7" transform="translate(690 817.348)">
+                          <g id="Group_6" data-name="Group 6" clip-path="url(#clip-path)">
+                            <path id="Path_1" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                          </g>
+                        </g>
+                        <g id="Group_8" data-name="Group 8" transform="translate(713 817.348)">
+                          <g id="Group_6-2" data-name="Group 6" clip-path="url(#clip-path)">
+                            <path id="Path_1-2" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                          </g>
+                        </g>
+                        <g id="Group_9" data-name="Group 9" transform="translate(736 817.348)">
+                          <g id="Group_6-3" data-name="Group 6" clip-path="url(#clip-path)">
+                            <path id="Path_1-3" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                          </g>
+                        </g>
+                        <g id="Group_10" data-name="Group 10" transform="translate(759 817.348)">
+                          <g id="Group_6-4" data-name="Group 6" clip-path="url(#clip-path)">
+                            <path id="Path_1-4" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                          </g>
+                        </g>
+                        <g id="Group_11" data-name="Group 11" transform="translate(782 817.348)">
+                          <g id="Group_6-5" data-name="Group 6" clip-path="url(#clip-path)">
+                            <path id="Path_1-5" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    <p>5.0</p>
+                </div>
+                <h2>Keeps me smelling fresh all day</h2>
+                <p class="commenttext">I started using mint greens deodrant after having tried several other natural deodrants. I was keen to avoid the harsh chemicals that are in standard deodrants whilst Breast feeding my daughter. I also suffer with under arm irritation. I hadn’t been able to find a natural product i got on with until Mint greens. The application is so smooth and it doesnt leave any marks or flakes. It’s keeps me smelling fresh all day and my under arm irritation is loads better. I will not be switching back and my underarms thanks you!</p>
+                <center><h4>- Sophie R</h4></center>
+              </div>
+            </div>
+
+            <div>
+              <div class="internalcomment">
+                <div class="qualy">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="17.117" viewBox="0 0 110 17.117">
+                      <defs>
+                        <clipPath id="clip-path">
+                          <rect id="Rectangle_10" data-name="Rectangle 10" width="18" height="17.117" fill="#02fc54"/>
+                        </clipPath>
+                      </defs>
+                      <g id="Group_12" data-name="Group 12" transform="translate(-690 -817.348)">
+                        <g id="Group_7" data-name="Group 7" transform="translate(690 817.348)">
+                          <g id="Group_6" data-name="Group 6" clip-path="url(#clip-path)">
+                            <path id="Path_1" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                          </g>
+                        </g>
+                        <g id="Group_8" data-name="Group 8" transform="translate(713 817.348)">
+                          <g id="Group_6-2" data-name="Group 6" clip-path="url(#clip-path)">
+                            <path id="Path_1-2" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                          </g>
+                        </g>
+                        <g id="Group_9" data-name="Group 9" transform="translate(736 817.348)">
+                          <g id="Group_6-3" data-name="Group 6" clip-path="url(#clip-path)">
+                            <path id="Path_1-3" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                          </g>
+                        </g>
+                        <g id="Group_10" data-name="Group 10" transform="translate(759 817.348)">
+                          <g id="Group_6-4" data-name="Group 6" clip-path="url(#clip-path)">
+                            <path id="Path_1-4" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                          </g>
+                        </g>
+                        <g id="Group_11" data-name="Group 11" transform="translate(782 817.348)">
+                          <g id="Group_6-5" data-name="Group 6" clip-path="url(#clip-path)">
+                            <path id="Path_1-5" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    <p>5.0</p>
+                </div>
+                <h2>Truely amazing!</h2>
+                <p class="commenttext">I couldn't believe how great this was? I have always used deodorant spray, but now I'm converted. the product has a great refreshing smell, is applied really easily, and lasts all day. I had doubts that it wouldn't work, but it did. The packaging is quite cute too :)</p>
+                <center><h4>- Natalie </h4></center>
+              </div>
+            </div>
+
+            <div>
+              <div class="internalcomment">
+                <div class="qualy">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="17.117" viewBox="0 0 110 17.117">
+                      <defs>
+                        <clipPath id="clip-path">
+                          <rect id="Rectangle_10" data-name="Rectangle 10" width="18" height="17.117" fill="#02fc54"/>
+                        </clipPath>
+                      </defs>
+                      <g id="Group_12" data-name="Group 12" transform="translate(-690 -817.348)">
+                        <g id="Group_7" data-name="Group 7" transform="translate(690 817.348)">
+                          <g id="Group_6" data-name="Group 6" clip-path="url(#clip-path)">
+                            <path id="Path_1" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                          </g>
+                        </g>
+                        <g id="Group_8" data-name="Group 8" transform="translate(713 817.348)">
+                          <g id="Group_6-2" data-name="Group 6" clip-path="url(#clip-path)">
+                            <path id="Path_1-2" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                          </g>
+                        </g>
+                        <g id="Group_9" data-name="Group 9" transform="translate(736 817.348)">
+                          <g id="Group_6-3" data-name="Group 6" clip-path="url(#clip-path)">
+                            <path id="Path_1-3" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                          </g>
+                        </g>
+                        <g id="Group_10" data-name="Group 10" transform="translate(759 817.348)">
+                          <g id="Group_6-4" data-name="Group 6" clip-path="url(#clip-path)">
+                            <path id="Path_1-4" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                          </g>
+                        </g>
+                        <g id="Group_11" data-name="Group 11" transform="translate(782 817.348)">
+                          <g id="Group_6-5" data-name="Group 6" clip-path="url(#clip-path)">
+                            <path id="Path_1-5" data-name="Path 1" d="M3.263,16.589c.017-.065.041-.174.072-.279q.818-2.7,1.643-5.4a.263.263,0,0,0-.106-.347Q2.6,8.86.343,7.144a1.668,1.668,0,0,1-.207-.167A.462.462,0,0,1,.347,6.2,1.249,1.249,0,0,1,.654,6.17c1.877-.037,3.754-.076,5.631-.1a.322.322,0,0,0,.36-.256C7.258,4.023,7.884,2.241,8.506.458,8.515.43,8.523.4,8.534.374A.487.487,0,0,1,9,0a.481.481,0,0,1,.466.374q.59,1.681,1.174,3.365c.245.7.5,1.405.732,2.112a.266.266,0,0,0,.3.212c1.825.03,3.651.067,5.476.1.118,0,.237,0,.355.007a.473.473,0,0,1,.471.335.46.46,0,0,1-.193.543q-1,.758-2,1.512c-.878.664-1.753,1.332-2.638,1.988a.288.288,0,0,0-.117.383c.549,1.784,1.087,3.572,1.631,5.358.08.263.156.521-.106.728-.2.161-.39.127-.741-.117q-2.321-1.611-4.641-3.225a.252.252,0,0,0-.344,0Q6.492,15.311,4.15,16.93a1.709,1.709,0,0,1-.2.133.474.474,0,0,1-.683-.474" transform="translate(0 -0.001)" fill="#02fc54"/>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    <p>5.0</p>
+                </div>
+                <h2>Great product</h2>
+                <p class="commenttext">Never going back to ‘normal’ deodorant!</p>
+                <center><h4>- Patrick </h4></center>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+    </div>
+  </div>
+
+  <div class="separatorgrey"></div>
+
+  <div class="grid">
+      <div class="grid__item medium-up--three-quarters medium-up--push-one-eighth">
+
+        <div class="effectdiv">
+          <div class="column c_40">
+            <img src="{{product.metafields.EffectImage.Effectimage}}" />
+          </div>
+          <div class="column c_10">&nbsp;</div>
+          <div class="column c_50">
+            <h2>Natural & Effective Ingredients</h2>
+            <a class="openlist" href="javascript:void(0)">Full Ingredients List & Allergens</a>
+            
+            <div class="ingredientslist">
+              <p><strong>Ingredients</strong>: Coconut Oil, Refined Beeswax, Corn Starch ,Shea Butter, Arrowroot, Bicarbonate of Soda, Coconut Oil, Dandelion Extract, Tea Tree Leaf Oil, Eucalyptus Leaf oil, Lemongrass Oil</p>
+              <p><strong>Allergens</strong>: Linalool, Limonene, Citral, Geraniol</p>
+
+            </div>
+            {{product.metafields.EffectDescription.EffectDescription}}
+            
+            
+            
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="whygreat">
+            <div class="column c_40">
+              {{product.metafields.WhyGreatDescrip.WhyGreatDescrip}}
+            </div>
+            <div class="column c_10">&nbsp;</div>
+            <div class="column c_50 colsright">
+                <img src="{{product.metafields.WhyGreatImage.WhyGreatImage}}" />
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+      </div>
+  </div>
+</div>
+
+<div class="bannerclaim">
+   <div class="grid">
+      <div class="grid__item medium-up--three-quarters medium-up--push-one-eighth">
+        <h2>CLAIM YOUR<br><span>FREE NATURAL</span> DEODORANT NOW</h2>
+        <p>Worth £10 - All you need to do is cover delivery from £4.99</p>
+          {% assign btnactive = "false" %}
+            {% for item in cart.items %}
+                {% if item.product.id == 7673965248738  %}
+                   {% assign btnactive = "true" %}
+                {% endif %} 
+            {% endfor %}
+
+            {% if btnactive == "true"  %}
+              <a class="disablebtn" href="javascript:void(0);">CLAIM NOW</a>
+            {% elsif btnactive == "false" %}
+              <a class="purplebtn" href="javascript:void(0);">CLAIM NOW</a>
+            {% endif %} 
+      </div>
+   </div>  
+</div>
+
+
+
+<script>
+	$(document).ready(function(){
+      $('.your-class').slick({
+        autoplay:true,
+        autoplaySpeed:10000,
+        arrows:true,
+        dots:true,
+        prevArrow:"<img class='a-left control-c prev slick-prev' src='https://cdn.shopify.com/s/files/1/0445/0828/3039/files/arrow_left.png?v=1649338597'>",
+        nextArrow:"<img class='a-right control-c next slick-next' src='https://cdn.shopify.com/s/files/1/0445/0828/3039/files/arrow_right.png?v=1649338596'>",
+        slidesToShow:1,
+        slidesToScroll:1
+        });
+    });
+  
+  $( ".purplebtn" ).click(function() {
+    //$( "#AddToCartForm-7673965248738" ).submit();
+    $('#AddToCart-7673965248738').trigger('click');
+    window.setTimeout(function() {
+        //window.location.href = 'https://mintgreen.store/collections/second-step-deodorant';
+        window.location.href = 'https://mintgreen.store/discount/freedeodorant?redirect=/collections/second-step-deodorant';
+    }, 3000);
+  });
+  
+  //Btn accordion
+  $( ".openlist" ).click(function() {
+    if( $( ".ingredientslist" ).hasClass( "on" ) ){
+    	$( ".ingredientslist" ).removeClass( "on" );
+        $( this ).removeClass( "on" );
+    }else{
+    	$( ".ingredientslist" ).addClass( "on" );
+        $( this ).addClass( "on" );
+    }
+    
+  });
+
+</script>
+				

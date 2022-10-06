@@ -1,0 +1,34 @@
+<div class="grid main-grid-about">
+  <div class="about-sec-1 mobsec-main">
+    <img src="{{ section.settings.banner | img_url: ""}}">
+  </div>
+  <div class="about-sec-1 mobesec-1">
+    <img src="{{ section.settings.banner2 | img_url: ""}}">
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "about banner",
+    "settings": [
+		  {
+            "type": "image_picker",
+            "id": "banner",
+            "label": "Image"
+          },
+{
+            "type": "image_picker",
+            "id": "banner2",
+            "label": "Image"
+          }
+ 
+	]
+  }
+
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
