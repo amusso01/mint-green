@@ -46,16 +46,14 @@
     {% assign timer_format = settings.timer.format | json %}
   {% else %}
     {%- capture timer_format -%}
-      "{D} d. {h} h. {m} min. {ss} sec."
-    {%- endcapture -%}
+      "{D} d. {h} h. {m} min. {ss} sec."    {%- endcapture -%}
   {% endif %}
 
   {% if settings.timer.translations %}
     {% assign timer_translations = settings.timer.translations | json %}
   {% else %}
     {%- capture timer_translations -%}
-      {"month.1.full":"January","month.1.short":"Jan","month.2.full":"February","month.2.short":"Feb","month.3.full":"March","month.3.short":"Mar","month.4.full":"April","month.4.short":"Apr","month.5.full":"May","month.5.short":"May","month.6.full":"June","month.6.short":"Jun","month.7.full":"July","month.7.short":"Jul","month.8.full":"August","month.8.short":"Aug","month.9.full":"September","month.9.short":"Sep","month.10.full":"October","month.10.short":"Oct","month.11.full":"November","month.11.short":"Nov","month.12.full":"December","month.12.short":"Dec"}
-    {%- endcapture -%}
+      {"month.1.full":"January","month.1.short":"Jan","month.2.full":"February","month.2.short":"Feb","month.3.full":"March","month.3.short":"Mar","month.4.full":"April","month.4.short":"Apr","month.5.full":"May","month.5.short":"May","month.6.full":"June","month.6.short":"Jun","month.7.full":"July","month.7.short":"Jul","month.8.full":"August","month.8.short":"Aug","month.9.full":"September","month.9.short":"Sep","month.10.full":"October","month.10.short":"Oct","month.11.full":"November","month.11.short":"Nov","month.12.full":"December","month.12.short":"Dec"}    {%- endcapture -%}
   {% endif %}
 
   window.DLA = window.DLA || {};
@@ -68,6 +66,7 @@
   window.DLA.dla_dm.timer.element_class = "dla_dm_timer";
   window.DLA.dla_dm.timer.visible_class = "dla_dm_timer_visible";
   window.DLA.dla_dm.timer.design_mode = false;
+  window.DLA.dla_dm.timer.selector = "";
 </script>
 
 <style type="text/css">
@@ -86,8 +85,8 @@
     {% endif %}
   }
 </style>
-<div class="dla_dm_timer">
-  {% if settings.timer.padding %}
+<div class="dla_dm_timer" >
+  {% if settings.timer.template %}
     {{ settings.timer.template }}
   {% else %}
     <p>⏳ Sale ends in <strong>{timer}</strong></p>
